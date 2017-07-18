@@ -3,13 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ejercicio Extra</title>
+  <script src="js/main.js"></script>
+
 </head>
 <body>
-	<script src="main.js"></script>
+<center>
 
-	<p><input id="c" onkeyup="convert('C')"> Grados Celsius</p>
-	<p><input id="f" onkeyup="convert('F')"> Grados Fahrenheit</p> 
+<h1>Convirtiendo grados Celsius a grados Farenheit</h1>
+<font size="5" face="impact" color="black">
 
-	<button type="button" onclick="convertirCelcius(); return false">Converter to Celcius</button>
+<table border="1" cellpadding="7" cellspacing="4" width="50%">
+<tr>
+<td width="50%">Grados Celcius</td>
+<td width="50%"><input type="text" id="c" style="width:300px;height:30px"></td>
+</tr>
+<tr>
+<td width="50%">Grados Farenheit</td>
+<td width="50%">
+<div type="text" id="rpta"> </div>
+
+</td>
+</tr>
+</table>
+</font>
+<p><button type="button" onclick="convertirCelcius();">Converter to Celcius</button></p>
+</center>
 </body>
 </html>
